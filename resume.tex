@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubham Kushwaha
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\includegraphics[scale=0.05]{images/profile.png}}\\ 
+    {\Huge \scshape Shubham Kushwaha} \\ \vspace{1pt}
+    Visakhapatnam, Andhra Pradesh 530008 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8500192165 ~ \href{mailto:eric.liclair@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{eric.liclair@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ericliclair}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ericliclair}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Ranchi}{Aug. 2019 -- Present}
+      {B. Tech. in \textbf{Computer Science and Engineering} (CGPA 8.52)}{Ranchi, Jharkhand}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms Analysis
+%                 \item Advanced Algorithms
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Live247.ai}{Jun 2021 -- Nov 2021}
+      {Full Stack Developer Intern}{Bengaluru, Remote}
+      \resumeItemListStart
+        \resumeItem{Developed Restful API built using \textbf{NodeJS}, \textbf{MySQL}, \textbf{Redis}, and documented using \textbf{Swagger}.}
+        \resumeItem{Implemented multiple features under medication category using \textbf{AntDesign}, \textbf{Redux} and \textbf{Axios}, built over \textbf{React}.}
+        \resumeItem{\textbf{Fixed dozens of bugs} and finalized the features for \textbf{alpha release} to hospitals across \textbf{Asia}, \textbf{Australia} and \textbf{Europe}.}
+        \resumeItem{Created a \textbf{themed components library} and \textbf{reduced} the \textbf{loading time} for the front-end software by up to \textbf{40\%}.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/EricLiclair/CPCLI}{\raisebox{0.0\height}\faLink\ {\textbf{CPCLI}}} $|$ \emph{Python, PyInquirer, click}}{Jan 2022}
+          \resumeItemListStart
+            \resumeItem{A \textbf{command line tool} to \textbf{generate files using templates}, \textbf{organize folders}, \textbf{compile execute and run code}.}
+            \resumeItem{The tool contains features like I/O redirecting to ease in Competitive Programming.}
+            \resumeItem{Project is \textbf{maintained as a package}, \textbf{licensed under MIT} and can be installed by using one command.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/EricLiclair/dev_card}{\raisebox{0.0\height}\faLink\ {\textbf{Dev Card}}} $|$ \emph{React, Firebase, Firebase Auth, Firebase Firestore, Material UI, Framer Motion}}{Dec 2021}
+          \resumeItemListStart
+            \resumeItem{Created a Web application using \textbf{React} and \textbf{Firebase} to maintain a record of DSA questions solved.}
+            \resumeItem{Contains a feature which shows flash cards from the list of solved questions to help remember the important concepts.}
+            \resumeItem{Built a very \textbf{responsive design} using \textbf{Material UI styled components}, and \textbf{framer motion}.}
+            \resumeItem{\textbf{Reduced} read \textbf{api calls} to cutdown on cost over firebase resources using \textbf{react context} to \textbf{store data locally}.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+         
+        \resumeProjectHeading
+          {\href{https://github.com/EricLiclair/firebaseChatapp}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Firebase( Auth, Realtime Database, Hosting), React, AntDesign}}{Aug 2021}
+          \resumeItemListStart
+            \resumeItem{A Web application developed using \textbf{React}, \textbf{AntdDesign} and \textbf{Firebase} with Authentication.}
+            \resumeItem{The application provides an interface for users to chat one-to-one, and also provides a list of all users (online and offline) to select from.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+        \resumeProjectHeading
+          {\href{https://github.com/EricLiclair/testapi}{\raisebox{0.0\height}\faLink\ {\textbf{Test API}}} $|$ \emph{Django, Django Rest Framework, drf-yasg, Token Auth, Redoc}}{Jun 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a concept of API containing the details of the students of institute to be used by the students.}
+            \resumeItem{Exposes an \textbf{endpoint to generate token} which can be exchanged over other endpoints of the API to access the students database.}
+            \resumeItem{Implemented \textbf{role based authorization} using \textbf{generic and hybrid API Views}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, C++} \\
+     \textbf{Developer Tools}{: VS Code, Azure, Google Cloud Platform, WSL} \\
+     \textbf{Technologies/Frameworks}{: Linux, Git, GitHub, React, Next, Express, Django, FastAPI, Flask, Firebase, Webpack, Babel} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Brightern}{Jan 2022 -- Present}{Core Member and Acting CPO}{Bengaluru}
+            \resumeItemListStart
+                \resumeItem{Working along \textbf{Thrifty and team}, \textbf{connecting India's best startups to India's best student developers}.}
+                \resumeItem{Ideating, iterating, developing and debugging the main product.}
+            \resumeItemListEnd
+        
+        \resumeSubheading{Google Developer Student Clubs}{Jul 2021 -- Present}{Lead}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{\textbf{Founded}, \textbf{lead} and \textbf{managed} a community of \textbf{250+ students}.}
+                \resumeItem{Organized hackathons, workshops and speaker sessions on various in demand technologies and skills.}
+            \resumeItemListEnd
+        
+        \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+            \resumeItemListStart
+                \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
