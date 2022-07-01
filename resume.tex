@@ -21,6 +21,7 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \graphicspath{ {./images/} }
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -121,16 +122,21 @@
 
 %----------HEADING----------
 
-\begin{center}
-    {\includegraphics[scale=0.05]{images/profile.png}}\\
+% \begin{left}
+    \begin{wrapfigure}{r}{0.2\textwidth}
+        {\vspace*{-0.07\textwidth}\includegraphics[width=0.2\textwidth]{images/profile.png}}
+    \end{wrapfigure}
     {\Huge \scshape Shubham Kushwaha} \\ \vspace{1pt}
-    Visakhapatnam, Andhra Pradesh 530008 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +91 8500192165 ~ \href{mailto:eric.liclair@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{eric.liclair@gmail.com}} ~
+    Visakhapatnam, Andhra Pradesh, 530008 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8500192165 ~ \href{mailto:eric.liclair@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shubham.btech.cs19@iiitranchi.ac.in}} ~
     \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ericliclair}}  ~
     \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ericliclair}}
     \vspace{-8pt}
-\end{center}
+% \end{left}
 
+% \begin{wrapfigure}{r}{0.4\linewidth}
+%     \includegraphics[width=\linewidth]{images/profile.png}
+% \end{wrapfigure}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -159,17 +165,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Medikabazaar}{Feb 2022 -- Present}
-      {Technology Intern}{Mumbai, Remote}
+      {Technology Intern}{Feb 2022 -- Present}
+      {Medikabazaar}{Mumbai, Remote}
       \resumeItemListStart
-        \resumeItem{Developed an application interface to generate professional quality promotional videos of products using \textbf{Remotion}, \textbf{React}, and created an api service to automate it for the complete catalogue.}
-        \resumeItem{The api service was then used to create an in-house alternate for \textbf{Rocketium}.}
-        \resumeItem{Developed a pre-processing pipeline to standardize the product mapping feature which reduced the order fulfillment time by a great factor.}
+        \resumeItem{Researched, devised and developed a part of a \textbf{pre-processing pipeline} to standardize the \textbf{product mapping} feature which \textbf{reduces the order confirmation time} by \textbf{automating} the \textbf{complete mapping process}.}
+        \resumeItem{Developed an application interface to generate professional quality promotional videos of products using \textbf{Remotion}, \textbf{React}, and created an api service using \textbf{NodeJs}, \textbf{Express} to automate it for the complete catalogue.}
+        \resumeItem{The service was then used to create an in-house alternate for \textbf{Rocketium}.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Live247.ai}{Jun 2021 -- Nov 2021}
-      {Full Stack Developer Intern}{Bengaluru, Remote}
+      {Full Stack Developer Intern}{Jun 2021 -- Nov 2021}
+      {Live247.ai}{Bengaluru, Remote}
       \resumeItemListStart
         \resumeItem{Developed Restful API built using \textbf{NodeJS}, \textbf{MySQL}, \textbf{Redis}, and documented using \textbf{Swagger}.}
         \resumeItem{Implemented multiple features under medication category using \textbf{AntDesign}, \textbf{Redux} and \textbf{Axios}, built over \textbf{React}.}
@@ -220,16 +226,31 @@
         %   \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
+%-----------RESEARCH-----------
+\section{Research/Achievements}
 
+    \resumeSubHeadingListStart
 
+        \resumeSubheading{ADC@$\theta$r}{Ongoing}{Improvising recommendation systems [Machine Learning]}{\href{https://www.researchgate.net/profile/Bam-Sinha}{Dr. Bam Bahadur Sinha, IIIT Ranchi}}
+            \resumeItemListStart
+                \resumeItem{Adaptive divisional categorization of ratings under rating threshold $\theta$r for similarity computation in recommendation systems.}
+            \resumeItemListEnd
+
+        % \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+        %     \resumeItemListStart
+        %         \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, C++} \\
+     \textbf{Languages}{: Python, C++, JavaScript} \\
      \textbf{Developer Tools}{: VS Code, Azure, Google Cloud Platform, WSL} \\
-     \textbf{Technologies/Frameworks}{: Linux, Git, GitHub, React, Next, Express, Django, FastAPI, Flask, Firebase, Webpack, Babel} \\
+     \textbf{Technologies/Frameworks}{: Linux, Git, GitHub, React, Next, Express, Django, FastAPI, Flask, Firebase, Webpack, Babel, Pandas, Numpy} \\
     }}
  \end{itemize}
  \vspace{-16pt}
@@ -239,14 +260,18 @@
 \section{Leadership / Extracurricular}
 
     \resumeSubHeadingListStart
-
-        \resumeSubheading{Google Developer Student Clubs}{Jul 2021 -- Present}{Lead}{IIIT Ranchi}
+        \resumeSubheading{Secretary}{Jun 2022 -- Present}{House of Geeks, Technical Society}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{Managed, devised and decided upon decisions to promote technical and practical approach of problem solving.}
+            \resumeItemListEnd
+            
+        \resumeSubheading{Lead}{Jul 2021 -- Present}{Google Developer Student Clubs}{IIIT Ranchi}
             \resumeItemListStart
                 \resumeItem{\textbf{Founded}, \textbf{lead} and \textbf{managed} a community of \textbf{250+ students}.}
                 \resumeItem{Organized hackathons, workshops and speaker sessions on various in demand technologies and skills.}
             \resumeItemListEnd
 
-        \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+        \resumeSubheading{Organizer}{Jun 2021 -- Present}{Google Developer Groups}{Ranchi}
             \resumeItemListStart
                 \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
             \resumeItemListEnd
